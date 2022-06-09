@@ -1,0 +1,274 @@
+
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#side-menu{
+    display: none;
+}
+.encabezado {
+     
+    background-color: black;
+    display: flex;
+    border-style: solid;
+    border: 0.1em;
+    border-color: aliceblue;
+
+}
+
+.encabezado-img {
+    width: 13%;
+    margin-left: 6rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navbar-button {
+    display: none;
+}
+.navbar {
+    width: 100%;
+    margin-top: 3.4em;
+    margin-bottom: 3.4em;
+    margin-inline-start: 10em;
+    
+}
+
+.navbar-movil {
+    display: none;
+}
+
+
+.navbar a{
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    padding: 0.7em;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover{
+    color: green;
+    
+}
+
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin: 100px;
+    
+}
+
+
+.contenedor p {
+    width: 850px;
+    height: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+
+.contenedor img {
+    width: 30%;
+    
+}
+
+
+
+.main {
+    color: white;
+}
+
+h2 {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+
+.historia{
+    display: flex;
+    margin: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.historia img {
+    padding: 20px;
+}
+.grid-pulque {
+    display: grid;
+    grid: 70px / auto auto auto auto;
+    padding: 70px;
+}
+
+.grid-pulque h3 {
+    margin-left: 70px;
+}
+
+.lista {
+    color: white;
+    list-style: none;
+    display: grid;
+    grid: 70px / auto auto auto auto auto;
+    padding: 70px;
+    margin-bottom: 100px;
+    padding: 60px;
+    text-align: center;
+    
+}
+
+.contacto {
+    display: flex;
+    margin: 25px;
+    padding-left: 250px;
+}
+
+
+
+.formulario {
+    display: block;
+}
+
+.contacto > img {
+    height: 350px;
+    width: 500px;
+    padding-right: 50px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    margin: 12px;   
+}
+
+footer {
+    width: 98%;
+    color: white;
+    display: inline-block;
+    padding: 1.2em;
+    margin-top: 1.8em;
+    border-style: solid;
+    border: 1px;
+    border-color: aliceblue;
+    text-align: center;
+}
+
+
+
+/* Diseño responsivo 480px */
+@media only screen and (max-width: 480px) {
+
+    .navbar {
+        display: none;
+        color: white;
+    }
+
+    .navbar-button {
+        display: inline;
+        color: white;
+        font-size: 3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        text-decoration: none;
+
+    }
+    .navbar-button:active {
+        color: brown;
+    }
+    .encabezado{
+        display: flex;
+        border-style: none ; 
+    }
+    .encabezado-img {
+        width: 35%;
+        height: 35%;
+        padding-left: 2.3em;
+        
+    }
+    .contenedor {
+        display: block;
+        width: 100%;
+        margin:0;
+    }
+
+    .contenedor p {
+        text-align: justify;
+        width: 93%;
+        height: 100%;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        font-size: small;   
+    }
+
+    .contenedor img {
+        height: 60%;
+        width: 60%;
+        margin-top: 1.5em;
+        padding-left: 5.3em;
+        padding-right: 5.3em;
+        
+    }
+    
+    footer {
+        margin: 0;
+        border-style: none !important;
+        font-size: small;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    .main {
+        width: 100%;
+    }
+    .historia {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .historia img {
+        height: 70%;
+        width: 70%;
+        padding: 0;
+        margin-left:2.3em;
+        margin-right:2.3em;
+        padding-bottom: 0.3em;
+
+
+    }
+    p {
+        text-align: justify;
+        font-size: small;
+        margin-left:1.2em;
+        margin-right: 1.2em;
+        margin-bottom: 0.5;
+    }
+}
